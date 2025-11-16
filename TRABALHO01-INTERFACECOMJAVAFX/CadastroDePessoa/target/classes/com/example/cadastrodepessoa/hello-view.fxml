@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" alignment="CENTER_LEFT"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.cadastrodepessoa.HelloController">
+
+    <padding>
+
+    </padding>
+
+    <TextField fx:id="campoNome" promptText="Nome" />
+
+    <TextField fx:id="campoIdade" promptText="Idade" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Sexo:" />
+        <RadioButton fx:id="rbMasc" text="Masculino" />
+        <RadioButton fx:id="rbFem" text="Feminino" />
+    </HBox>
+
+    <CheckBox fx:id="chkEsportes" text="Gosta de esportes" />
+
+    <Button fx:id="btnAnalisar" text="Analisar" />
+
+    <Label fx:id="resultado" text="Resultado:" />
+
+</VBox>
