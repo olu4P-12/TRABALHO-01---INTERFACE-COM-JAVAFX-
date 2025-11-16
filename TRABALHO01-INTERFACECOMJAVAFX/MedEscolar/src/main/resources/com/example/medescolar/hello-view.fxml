@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" alignment="CENTER_LEFT"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.medescolar.HelloController">
+
+    <padding>
+        <Insets />
+    </padding>
+
+    <TextField fx:id="campoNome" promptText="Nome do aluno" />
+
+    <TextField fx:id="campoN1" promptText="Nota 1" />
+    <TextField fx:id="campoN2" promptText="Nota 2" />
+    <TextField fx:id="campoN3" promptText="Nota 3" />
+
+    <Button fx:id="btnCalcular" text="Calcular Média" />
+
+    <Label fx:id="resultado" text="Resultado:" />
+
+</VBox>
