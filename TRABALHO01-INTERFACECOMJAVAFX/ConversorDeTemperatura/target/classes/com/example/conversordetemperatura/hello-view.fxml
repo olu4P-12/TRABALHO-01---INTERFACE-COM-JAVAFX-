@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.conversordetemperatura.HelloController">
+
+    <TextField fx:id="campoTemp" promptText="Digite a temperatura" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnParaF" text="Converter para °F" />
+        <Button fx:id="btnParaC" text="Converter para °C" />
+    </HBox>
+
+    <Label fx:id="resultado" text="Resultado:" />
+
+</VBox>
