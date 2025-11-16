@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.contadeluz.HelloController"
+      alignment="CENTER"
+      spacing="12" prefWidth="350" prefHeight="300">
+
+    <padding>
+        <Insets top="20" bottom="20" left="20" right="20"/>
+    </padding>
+
+    <Label text="Nome do cliente:"/>
+    <TextField fx:id="txtNome"/>
+
+    <Label text="kWh consumidos:"/>
+    <TextField fx:id="txtKwh"/>
+
+    <Label text="Tipo de residência:"/>
+    <ComboBox fx:id="comboTipo"/>
+
+    <Button text="Calcular" onAction="#calcular"/>
+
+    <Label fx:id="lblResultado" style="-fx-font-weight: bold;"/>
+
+</VBox>
