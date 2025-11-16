@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.trabalho01interfacecomjavafx.HelloController">
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="campo1" promptText="Número 1" />
+        <TextField fx:id="campo2" promptText="Número 2" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnSoma" text="+" />
+        <Button fx:id="btnSub" text="-" />
+        <Button fx:id="btnMult" text="×" />
+        <Button fx:id="btnDiv" text="÷" />
+    </HBox>
+
+    <Label fx:id="resultado" text="Resultado:" />
+
+</VBox>
