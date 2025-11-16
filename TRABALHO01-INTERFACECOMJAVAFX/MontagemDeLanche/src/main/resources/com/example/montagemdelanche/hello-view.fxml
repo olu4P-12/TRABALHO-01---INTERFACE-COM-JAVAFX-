@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.montagemdelanche.HelloController"
+      spacing="12"
+      alignment="TOP_LEFT"
+      prefWidth="400"
+      prefHeight="350">
+
+    <padding>
+        <Insets top="12" right="12" bottom="12" left="12"/>
+    </padding>
+
+    <!-- Nome -->
+    <Label text="Nome do cliente:"/>
+    <TextField fx:id="txtNome"/>
+
+    <!-- Pão -->
+    <Label text="Tipo de pão:"/>
+    <ComboBox fx:id="comboPao"/>
+
+    <!-- Carne -->
+    <Label text="Carne:"/>
+    <HBox spacing="10">
+        <RadioButton fx:id="rbBovina" text="Bovina" toggleGroup="$carneGroup"/>
+        <RadioButton fx:id="rbFrango" text="Frango" toggleGroup="$carneGroup"/>
+        <RadioButton fx:id="rbSoja" text="Soja" toggleGroup="$carneGroup"/>
+    </HBox>
+
+    <!-- Adicionais -->
+    <Label text="Adicionais:"/>
+    <HBox spacing="10">
+        <CheckBox fx:id="chkQueijo" text="Queijo"/>
+        <CheckBox fx:id="chkBacon" text="Bacon"/>
+        <CheckBox fx:id="chkSalada" text="Salada"/>
+        <CheckBox fx:id="chkMolho" text="Molho"/>
+    </HBox>
+
+    <!-- Botão -->
+    <Button text="Gerar Pedido" onAction="#gerarPedido"/>
+
+    <!-- Resultado -->
+    <Label fx:id="lblResultado" style="-fx-font-weight: bold;"/>
+</VBox>
